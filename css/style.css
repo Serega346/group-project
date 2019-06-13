@@ -1,0 +1,121 @@
+header {
+    background-image: url(../images/90.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 772px;
+}
+
+.activeHead {
+    background-color: #1C2331;
+    transition: background-color 500ms;
+}
+
+.logo {
+    width: 150px;
+}
+
+#overlay {
+    position: absolute;
+    min-height: 772px;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.noneActive {
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.mainBtn {
+    border: 3px solid whitesmoke;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+a.nav-link{
+    font-size: 1.1rem;
+    color: whitesmoke;
+}
+
+.navbar-collapse {
+    justify-content: space-between;
+}
+
+.nav-link {
+    margin-right: 1.5rem;
+}
+
+li.nav-item {
+    margin-left: 40px;
+}
+
+.description {
+    position: absolute;
+    top: 27%;
+    margin: auto;
+    padding: 2em;
+    color: whitesmoke;
+}
+
+.headerBtn {
+    width: 120px;
+    border-radius: 30px;
+    border: 3px solid whitesmoke;
+    padding: 8px;
+    color: whitesmoke;
+}
+
+#loading{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    background: #1C2331;
+    z-index: 1021;}
+
+.anmLoad{
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    left: 50%;top: 48%;
+    margin-left:-125px;
+    margin-top:-75px;
+    color: #1C2331;
+    font-size:40px;
+    letter-spacing:-2px;
+    text-align:center;
+    line-height:35px;}
+
+#loading .svgAnm {
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    background: url(../images/tail-spin.svg) center center no-repeat;
+    background-size:41px;
+    margin: -16px 0 0 -16px;}
+
+[data-toggle="collapse"] {
+    background-image: url(../images/icons8-menu.svg);
+    width: 35px;
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn:hover {
+    color: whitesmoke;
+}
+
+.modal-content {
+    box-shadow: #1b1e21 0 0 20px 10px;
+}
