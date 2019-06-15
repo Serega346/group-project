@@ -79,3 +79,39 @@ img[alt="viber_logo"],
 img[alt="telegram_logo"]:hover {
     cursor: pointer;
 }
+
+
+
+/*block-planning*/
+#step {
+    background-color: aliceblue;
+     margin-top: 0px;
+}
+
+#step-header {
+    background-color: #1C2331;
+     color: white;
+}
+h4 {
+font-family:verdana;
+
+}
+
+ul li .plan {
+padding: 0px;
+margin: 0px;
+}
+
+label {
+padding-top: 12px;
+color: black;
+font-family:verdana;
+font-size:16px;
+font-weight:bold;
+padding-bottom: 0px;
+}
+
+img {
+weight:100px;
+border-radius:50%;
+}
