@@ -54,3 +54,28 @@ div {
 .blocks-header a:after {
     background-color: #000;
 }
+
+img[alt="footer_logo"] {
+    width: 70%;
+}
+
+#linkedin_logo {
+    width: 30px;
+    height: auto;
+}
+
+#linkedin_logo:hover {
+    cursor:pointer;
+    animation: pulse infinite 1s;
+}
+
+img[alt="viber_logo"], 
+img[src="image/telegram_logo.png"]{
+    width: 25px;
+    height: auto;
+}
+
+img[alt="viber_logo"],
+img[alt="telegram_logo"]:hover {
+    cursor: pointer;
+}
