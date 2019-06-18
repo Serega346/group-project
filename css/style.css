@@ -14,19 +14,19 @@ footer {
 
 /* Links style start */
 
-a {
+footer a {
     display: inline-block;
     color: #fff;
     text-decoration:none;
     cursor: pointer;
 }
 
-a:hover {
+footer a:hover {
     color: #fff;
     text-decoration: none;
 }
 
-a:after {
+footer a:after {
     background-color: #fff;
     display: block;
     content: "";
@@ -36,8 +36,8 @@ a:after {
     -moz--transition: width .3s ease-in-out;
     transition: width .3s ease-in-out;
 }
-a:hover:after,
-a:focus:after {
+footer a:hover:after,
+footer a:focus:after {
     width: 100%;
 }
 
