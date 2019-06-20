@@ -63,25 +63,34 @@
                     <div class="modal-body mx-3">
                         <div class="md-form mb-5">
                             <i class="fas fa-user prefix grey-text"></i>
-                            <input type="text" id="orangeForm-name" class="form-control validate">
-                            <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+                            <input type="text" id="orangeForm-name" class="form-control" required>
+                            <label for="orangeForm-name">Your name</label>
+                        </div>
+                        <div class="md-form mb-5">
+                            <i class="fas fa-mobile-alt prefix grey-text"></i>
+                            <input type="tel" id="orangeForm-tel" class="form-control" required>
+                            <label for="orangeForm-tel">Your phone</label>
                         </div>
                         <div class="md-form mb-5">
                             <i class="fas fa-envelope prefix grey-text"></i>
-                            <input type="tel" id="orangeForm-tel" class="form-control validate" required>
-                            <label data-error="wrong" data-success="right" for="orangeForm-tel">Your phone</label>
+                            <input type="email" id="orangeForm-email" class="form-control" required>
+                            <label for="orangeForm-email">Your email</label>
                         </div>
-                        <div class="md-form mb-5">
-                            <i class="fas fa-envelope prefix grey-text"></i>
-                            <input type="email" id="orangeForm-email" class="form-control validate" required>
-                            <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+                        <div class="radioGroup d-flex justify-content-lg-around">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
+                                <label class="custom-control-label grey-text" for="defaultInline1">Індивідуальні</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
+                                <label class="custom-control-label grey-text" for="defaultInline2">Групові</label>
+                            </div>
                         </div>
-                        <div class="md-form mb-4">
-                            <i class="fas fa-lock prefix grey-text"></i>
-                            <input type="password" id="orangeForm-pass" class="form-control validate">
-                            <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+                        <div class="md-form">
+                            <i class="fas fa-pencil-alt prefix grey-text"></i>
+                            <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                            <label data-error="wrong" data-success="right" for="form8">Your message</label>
                         </div>
-                        <input type="radio">
                     </div>
                     <div class="modal-footer d-flex justify-content-center">
                         <button type="submit" class="btn btn-deep-orange">Make it happen</button>
@@ -94,7 +103,7 @@
 <main>
     <div class="description container-fluid">
         <div class="container-fluid">
-            <div class="col-9">
+            <div class="col-lg-9 col-md-6 col-sm-12 col-12">
                 <div class="row align-items-center">
                     <div class="col-sm-12 col-md-12 col-lg-8">
                         <h1 class="h1-responsive text-center text-sm-left text-md-left text-lg-left">Навчання

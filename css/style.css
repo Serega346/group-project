@@ -70,7 +70,7 @@ img[alt="footer_logo"] {
 }
 
 img[alt="viber_logo"],
-img[src="image/telegram_logo.png"] {
+img[src="img/telegram_logo.png"] {
     width: 25px;
     height: auto;
 }
