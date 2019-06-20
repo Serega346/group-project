@@ -1,6 +1,3 @@
-
-
-
 $("#linkedin_logo").click(function () {
     window.open('https://linkedIn.com', '_blank');
 });
