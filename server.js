@@ -15,10 +15,10 @@ http.createServer(function (req, res) {
         req.on("data", function (chunck) {
             data += chunck;
         });
-
+//@TODO назва об'єкта [Object: null prototype] виправити
         req.on("end", function () {
             let formdata = queryString.parse(data);
-            console.log(formdata);
+            console.log(formdata); // Вивід даних форми в консоль як об'єкт
         });
     }
-}).listen("https://serega346.github.io");
+}).listen(63342);   //WebStorm standard port
