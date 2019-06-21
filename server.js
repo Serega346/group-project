@@ -6,7 +6,7 @@ http.createServer(function (req, res) {
 
     if (req.url === "") {
         res.writeHead(200, {"Content-Type": "text/html"});
-        fs.createReadStream("./public/index.html", "UTF-8").pipe(res);
+        fs.createReadStream("./index.html", "UTF-8").pipe(res);
     }
 
     if (req.method === "POST") {
