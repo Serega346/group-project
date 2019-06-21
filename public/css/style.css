@@ -1,0 +1,343 @@
+@charset "UTF-8";
+
+body {
+    background-color: linen;
+}
+
+footer {
+    color: aliceblue;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    line-height: 1.6;
+}
+
+.footer-background {
+    background-color: #1C2331;
+}
+
+footer a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:after {
+    background-color: #fff;
+    display: block;
+    content: "";
+    height: 2.5px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+footer a:hover:after,
+footer a:focus:after {
+    width: 100%;
+}
+
+div {
+    word-wrap: break-word;
+}
+
+.blocks-header a {
+    color: #000;
+}
+
+.blocks-header a:after {
+    background-color: #000;
+}
+
+img[alt="footer_logo"] {
+    width: 70%;
+}
+
+#linkedin_logo {
+    width: 30px;
+    height: auto;
+}
+
+#linkedin_logo:hover {
+    cursor: pointer;
+    animation: pulse infinite 1s;
+}
+
+img[alt="viber_logo"],
+img[src="img/telegram_logo.png"] {
+    width: 25px;
+    height: auto;
+}
+
+img[alt="viber_logo"],
+img[alt="telegram_logo"]:hover {
+    cursor: pointer;
+}
+
+#step {
+    background-color: aliceblue;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+#step-header {
+    background-color: #1C2331;
+    color: white;
+    font-family: verdana;
+}
+
+label {
+    padding-top: 3px;
+    color: black;
+    font-family: verdana;
+    font-size: 15px;
+    padding-bottom: 0px;
+}
+
+#fire {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+/* ::-webkit-scrollbar {
+    width: 12px;
+	background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+} */
+
+header {
+    background-image: url(../img/90.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 772px;
+}
+
+#loading {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1021;
+    position: fixed;
+    background: #1C2331;
+}
+
+#loading .svgAnm {
+    width: 41px;
+    height: 41px;
+    margin: -16px 0 0 -16px;
+    position: absolute;
+    background: url(../img/tail-spin.svg) center center no-repeat;
+    background-size: 41px;
+}
+
+#overlay {
+    position: absolute;
+    min-height: 772px;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.anmLoad {
+    top: 48%;
+    left: 50%;
+    width: 250px;
+    color: #1C2331;
+    height: 100px;
+    position: absolute;
+    font-size: 40px;
+    text-align: center;
+    margin-top: -75px;
+    margin-left: -125px;
+    line-height: 35px;
+    letter-spacing: -2px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.activeHead {
+    transition: background-color 500ms;
+    background-color: #1C2331;
+}
+
+.noneActive {
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.btn.mainBtn {
+    border: 3px solid whitesmoke;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: transparent;
+}
+
+.btn.headerBtn {
+    width: 120px;
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
+    padding: 8px;
+    border-radius: 30px;
+    background-color: transparent;
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.navbar-collapse {
+    justify-content: space-between;
+}
+
+li.nav-item {
+    margin-left: 40px;
+}
+
+.nav-link {
+    margin-right: 1.5rem;
+}
+
+a.nav-link {
+    color: whitesmoke;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+a.nav-link:hover {
+    color: whitesmoke;
+}
+
+.description {
+    position: absolute;
+    top: 27%;
+    margin: auto;
+    padding: 2em;
+    color: whitesmoke;
+}
+
+[data-toggle="collapse"] {
+    background-image: url(../img/icons8-menu.svg);
+    width: 35px;
+}
+
+.modal-content {
+    box-shadow: #1b1e21 0 0 20px 10px;
+}
+
+/*
+ * Анімація гамбургер меню
+ */
+
+.visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.hamburger {
+    width: 50px;
+    height: 30px;
+    position: relative;
+}
+
+.navbar {
+    box-shadow: none !important;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2, .bar3 {
+    top: 13px;
+}
+
+.bar4 {
+    bottom: 0;
+}
+
+.hamburger3 .bar1 {
+    transform-origin: 5%;
+}
+
+.hamburger3 .bar4 {
+    transform-origin: 5%;
+}
+
+.checkbox3:checked + label > .hamburger3 > .bar1 {
+    transform: rotate(45deg);
+    height: 3px;
+    width: 42px;
+}
+
+.checkbox3:checked + label > .hamburger3 > .bar3 {
+    transform: rotate(45deg);
+    height: 3px;
+    background-color: transparent;
+}
+
+.checkbox3:checked + label > .hamburger3 > .bar2 {
+    transform: rotate(-45deg);
+    height: 3px;
+    background-color: transparent;
+}
+
+.checkbox3:checked + label > .hamburger3 > .bar4 {
+    transform: rotate(-45deg);
+    height: 3px;
+    width: 42px;
+}
+
+label, .hamburger, .bar {
+    cursor: pointer;
+}
+
+.card-body {
+    background-color: black;
+}
