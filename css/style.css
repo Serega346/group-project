@@ -337,3 +337,7 @@ a.nav-link:hover {
 label, .hamburger, .bar {
     cursor: pointer;
 }
+
+.card-body {
+    background-color: black;
+}

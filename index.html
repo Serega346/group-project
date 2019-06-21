@@ -13,41 +13,42 @@
     <link rel="stylesheet" href="css/mdb.css">
 </head>
 <body>
-<div class="navigation-menu fixed-top">
-    <nav class="navbar navbar-expand-xl navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img class="logo" src="img/english_logo_white1.png" alt="logo"></a>
-            <input type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden navbar-toggler"
-                   data-toggle="collapse" data-target="#navContent"
-                   aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
-            <label for="checkbox3">
-                <div class="hamburger hamburger3 navbar-toggler">
-                    <span class="bar bar1"></span>
-                    <span class="bar bar2"></span>
-                    <span class="bar bar3"></span>
-                    <span class="bar bar4"></span>
-                </div>
-            </label>
-            <div class="collapse navbar-collapse" id="navContent">
-                <ul class="navbar-nav mr-4 mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Головна</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Про нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Щось там</a>
-                    </li>
-                </ul>
-                <div class="row justify-content-center">
-                    <button class="btn headerBtn nav-item" type="button">Записатись</button>
+<header>
+    <div class="navigation-menu fixed-top">
+        <nav class="navbar navbar-expand-xl navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="logo" src="img/english_logo_white1.png" alt="logo"></a>
+                <input type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden navbar-toggler"
+                       data-toggle="collapse" data-target="#navContent"
+                       aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                <label for="checkbox3">
+                    <div class="hamburger hamburger3 navbar-toggler">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                        <span class="bar bar4"></span>
+                    </div>
+                </label>
+                <div class="collapse navbar-collapse" id="navContent">
+                    <ul class="navbar-nav mr-4 mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Головна</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Про нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Щось там</a>
+                        </li>
+                    </ul>
+                    <div class="row justify-content-center">
+                        <button class="btn headerBtn nav-item" type="button" data-toggle="modal"
+                                data-target="#modalRegisterForm">Записатись</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-</div>
-<header>
+        </nav>
+    </div>
     <div id="overlay"></div>
     <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
          aria-hidden="true">
@@ -59,36 +60,38 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form action="" method="post">
+                <form action="/" method="POST" id="myForm" name="Message">
                     <div class="modal-body mx-3">
                         <div class="md-form mb-5">
                             <i class="fas fa-user prefix grey-text"></i>
-                            <input type="text" id="orangeForm-name" class="form-control" required>
+                            <input type="text" name="User name" id="orangeForm-name" class="form-control" required>
                             <label for="orangeForm-name">Your name</label>
                         </div>
                         <div class="md-form mb-5">
                             <i class="fas fa-mobile-alt prefix grey-text"></i>
-                            <input type="tel" id="orangeForm-tel" class="form-control" required>
+                            <input type="tel" name="User phone" id="orangeForm-tel" class="form-control" required>
                             <label for="orangeForm-tel">Your phone</label>
                         </div>
                         <div class="md-form mb-5">
                             <i class="fas fa-envelope prefix grey-text"></i>
-                            <input type="email" id="orangeForm-email" class="form-control" required>
+                            <input type="email" name="User email" id="orangeForm-email" class="form-control" required>
                             <label for="orangeForm-email">Your email</label>
                         </div>
-                        <div class="radioGroup d-flex justify-content-lg-around">
+                        <div class="radioGroup d-flex justify-content-around">
                             <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
+                                <input type="radio" class="custom-control-input" id="defaultInline1"
+                                       name="Selected course" value="Individual">
                                 <label class="custom-control-label grey-text" for="defaultInline1">Індивідуальні</label>
                             </div>
                             <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
+                                <input type="radio" class="custom-control-input" id="defaultInline2"
+                                       name="Selected course" value="Group">
                                 <label class="custom-control-label grey-text" for="defaultInline2">Групові</label>
                             </div>
                         </div>
                         <div class="md-form">
                             <i class="fas fa-pencil-alt prefix grey-text"></i>
-                            <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                            <textarea type="text" name="User message" id="form8" class="md-textarea form-control" rows="4"></textarea>
                             <label data-error="wrong" data-success="right" for="form8">Your message</label>
                         </div>
                     </div>
@@ -112,7 +115,7 @@
                         <p class="h4-responsive text-center text-sm-left text-md-left text-lg-left">Перше пробне заняття
                             безкоштовне! Запишись вже зараз!</p>
                         <div class="row justify-content-lg-start justify-content-md-start justify-content-sm-start justify-content-center">
-                        <button type="button" class="btn mainBtn p-1 p-sm-1 p-md-2 p-lg-2 mt-3"
+                            <button type="button" class="btn mainBtn p-1 p-sm-1 p-md-2 p-lg-2 mt-3"
                                     data-toggle="modal"
                                     data-target="#modalRegisterForm">
                                 <span class="mainBtnText">Записатись</span>
@@ -127,8 +130,10 @@
         <p align="justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit
             anim id est laborum.
         </p>
         <div class="float-sm-left m-4" data-speed="0.5">
@@ -140,16 +145,21 @@
             dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
             consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
             ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
-            labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
-            corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
-            qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
+            labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
+            ullam
+            corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+            reprehenderit
+            qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+            voluptas
             nulla pariatur?
         </p>
         <p align="justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit
             anim id est laborum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo dolor in
             reprehenderit amet.
         </p>
@@ -159,19 +169,29 @@
         <p class="mb-0 pb-2" align="justify">
             At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
             praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
+            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
+            dolorum
             fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-            eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda
-            est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
-            eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente
+            eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas
+            assumenda
+            est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
+            saepe
+            eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a
+            sapiente
             delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores
             repellat. Quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
-            optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis
-            dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut
-            et voluptates repudiandae sint et molestiae. Agni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-            quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
-            tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-            exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
+            optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est,
+            omnis
+            dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
+            ut
+            et voluptates repudiandae sint et molestiae. Agni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+            porro
+            quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+            modi
+            tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+            nostrum
+            exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel
+            eum
             iure reprehenderit qui in ea quibusdam et voluptate velit esse quam nihil ex minus id quod.
         </p>
     </div>
@@ -184,7 +204,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Групові заняття</h5>
                         <p class="card-text">Групові заняття 100 грн/год (за умови набору у групу до 4-5 людей)</p>
-                        <a href="#" class="btn btn-primary">Записатись</a>
+                        <a href="#" class="btn ">Записатись</a>
                     </div>
                 </div>
             </div>
@@ -265,8 +285,8 @@
             </div>
         </div>
     </div>
-<!--Planning- the end-->
-<!-- 'About Theacher'  -->
+    <!--Planning- the end-->
+    <!-- 'About Theacher'  -->
     <br>
     <div class="container">
         <div class="blocks-header">
@@ -282,7 +302,8 @@
                     змусити моїх учнів повірити, що вони можуть розмовляти англійською, та мій власний саморозвиток. Маю
                     досвід роботи у міжнародній компанії і спілкування англійською з клієнтами з усього світу.
                     <br>
-                    <img id="linkedin_logo" src="img/linkedin_logo.png" alt="linkedin_logo" class="" onclick="logoClick()"
+                    <img id="linkedin_logo" src="img/linkedin_logo.png" alt="linkedin_logo" class=""
+                         onclick="logoClick()"
                          title="LinkedIn Profile"> - переглянути резюме
                 </p>
             </div>

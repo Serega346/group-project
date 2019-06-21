@@ -60,3 +60,9 @@ $("img[alt='telegram_logo']").click(function () {
     window.open('https://telegram.org');
 });
 
+// $(function () {
+//     $("#myForm").submit(function (event) {
+//         event.preventDefault();
+//         $.post("/", $(this).serialize());
+//     })
+// });
