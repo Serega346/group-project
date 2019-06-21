@@ -4,7 +4,7 @@ const queryString = require('querystring');
 
 http.createServer(function (req, res) {
 
-    if (req.url === "") {
+    if (req.url === "/group-project") {
         res.writeHead(200, {"Content-Type": "text/html"});
         fs.createReadStream("./index.html", "UTF-8").pipe(res);
     }
@@ -21,4 +21,4 @@ http.createServer(function (req, res) {
             console.log(formdata);
         });
     }
-}).listen("serega346.github.io/group-project/");
+}).listen("https://serega346.github.io");
