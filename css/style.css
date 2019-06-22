@@ -352,12 +352,15 @@ a.btn.btn-primary {
 }
 
 #scrollToTop {
+      text-shadow: 0 0 8px black; 
+      color: white;  
       position: fixed;
-      bottom: 20px;
-      right: 20px;
+      bottom: 40px;
+      right: 40px;
       font-weight: bold;
       cursor: pointer;
       opacity:0;
       transition: all 0.5s ease-in;
+      
 }
 
