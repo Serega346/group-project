@@ -1,0 +1,7 @@
+{
+  "name": "FWD-12 K3",
+  "version": "1.0.0",
+  "dependencies": {
+    "node-telegram-bot-api": "latest"
+  }
+}
