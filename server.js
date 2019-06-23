@@ -1,4 +1,4 @@
-const http = require('http');
+/*const http = require('http');
 const fs = require('fs');
 const queryString = require('querystring');
 
@@ -21,4 +21,24 @@ http.createServer(function (req, res) {
             console.log(formdata); // Вивід даних форми в консоль як об'єкт
         });
     }
-}).listen(63342);   //WebStorm standard port
+}).listen(63342);   //WebStorm standard port*/
+
+const express = require('express');
+const http = require('http')
+const app = express();
+
+
+http.createServer(app).listen(3000)
+
+app.use(express.urlencoded({ extended: true }));
+app.set('view engine', 'html');
+app.use(express.static(__dirname + '/'));
+
+app.get('/', function (req, res) {
+    res.sendFile('index.html', {root : __dirname });
+  })
+
+app.post('/submit-form', (req, res) => {
+    console.log('req.body', req.body['User name']);
+    res.end()
+  })
