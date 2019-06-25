@@ -52,17 +52,27 @@ $("#checkbox3").on("click", function () {
     }
 });
 
-$("#linkedin_logo").click(function () {
+$("#linkedin_logo").on("click", function () {
     window.open('https://linkedIn.com', '_blank');
 });
 
-$("img[alt='telegram_logo']").click(function () {
+$("img[alt='telegram_logo']").on("click", function () {
     window.open('https://telegram.org');
 });
 
-// $(function () {
-//     $("#myForm").submit(function (event) {
-//         event.preventDefault();
-//         $.post("/", $(this).serialize());
-//     })
-// });
+$("#sendForm").on("click", function () {
+    const message   = $("#myForm").serialize();
+    const userName = $("#Form-name").val();
+        $.ajax({
+            type: 'POST',
+            url: '/submit',
+            data: message,
+            success: function () {
+                $("#myForm")[0].reset();
+                toastr.success('Ваші дані успішно відправлено', userName);
+            },
+            error: function (res) {
+                toastr.error(res.status, 'Помилка при відправленні даних:');
+            }
+        });
+});

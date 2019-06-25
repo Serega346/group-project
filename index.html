@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mdb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
 </head>
 <body>
 <header>
@@ -60,12 +61,12 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form action="/submit-form" method="POST" id="myForm" name="Message">
+                <form id="myForm" name="Message">
                     <div class="modal-body mx-3">
                         <div class="md-form mb-5">
                             <i class="fas fa-user prefix grey-text"></i>
-                            <input type="text" name="name" id="orangeForm-name" class="form-control" required>
-                            <label for="orangeForm-name">Your name</label>
+                            <input type="text" name="name" id="Form-name" class="form-control" required>
+                            <label for="Form-name">Your name</label>
                         </div>
                         <div class="md-form mb-5">
                             <i class="fas fa-mobile-alt prefix grey-text"></i>
@@ -96,7 +97,7 @@
                         </div>
                     </div>
                     <div class="modal-footer d-flex justify-content-center">
-                        <button type="submit" class="btn btn-deep-orange">Make it happen</button>
+                        <button class="btn btn-deep-orange" id="sendForm" data-dismiss="modal" data-toggle="modal">Make it happen</button>
                     </div>
                 </form>
             </div>
@@ -347,6 +348,7 @@
 <script src="js/popper.min.js"></script>
 <script src="js/mdb.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>		

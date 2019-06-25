@@ -341,3 +341,12 @@ label, .hamburger, .bar {
 .card-body {
     background-color: black;
 }
+
+.toast.toast-error {
+    z-index: 99999;
+}
+
+#toast-container > div {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
