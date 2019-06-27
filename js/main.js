@@ -53,11 +53,11 @@ $("#checkbox3").on("click", function () {
 });
 
 $("#linkedin_logo").on("click", function () {
-    window.open('https://linkedin.com');
+    window.open('https://linkedIn.com', '_blank');
 });
 
 $("img[alt='telegram_logo']").on("click", function () {
-    window.open('https://t.me/OlgaVasylyk');
+    window.open('https://telegram.org');
 });
 
 $("#sendForm").on("click", function () {
