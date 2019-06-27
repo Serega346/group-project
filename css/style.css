@@ -6,6 +6,7 @@ footer {
     padding-top:6%;
     padding-bottom:6%;
     line-height: 1.6;
+    font-family: 'Script MT Bold', 'Segoe Print', Arial, sans-serif;
 }
 
 .footer-background {
@@ -110,6 +111,8 @@ label {
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
+
+/*  Scrollbar */
 /* ::-webkit-scrollbar {
     width: 12px;
 	background-color: #fff;
