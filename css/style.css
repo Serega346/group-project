@@ -335,3 +335,7 @@ label, .hamburger, .bar {
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
 }
+
+#step {
+    background-color: 470225653470225653470225653lavender;
+}
