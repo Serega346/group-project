@@ -53,11 +53,11 @@ $("#checkbox3").on("click", function () {
 });
 
 $("#linkedin_logo").on("click", function () {
-    window.open('https://linkedIn.com', '_blank');
+    window.open('https://ua.linkedin.com/in/olga-vasylyk-35638a129');
 });
 
 $("img[alt='telegram_logo']").on("click", function () {
-    window.open('https://telegram.org');
+    window.open('https://t.me/olgavasylyk', '_blank');
 });
 
 $("#sendForm").on("click", function () {
@@ -76,3 +76,16 @@ $("#sendForm").on("click", function () {
             }
         });
 });
+
+/* TopScroll  */
+$(function(f){
+    var element = f('#toTopButton');
+    f(window).scroll(function(){
+        element['fade'+ (f(this).scrollTop() > 300 ? 'In': 'Out')](600);           
+    });
+});
+
+$('#toTopButton').click(function(){
+	document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+})

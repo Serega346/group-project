@@ -71,7 +71,7 @@ img[alt="footer_logo"] {
 }
 
 img[alt="viber_logo"],
-img[src="img/telegram_logo.png"] {
+img[alt="telegram_logo"] {
     width: 25px;
     height: auto;
 }
@@ -111,7 +111,7 @@ label {
 
 
 header {
-    background-image: url(../img/90.jpg);
+    background-image: url(../image/90.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -133,7 +133,7 @@ header {
     height: 41px;
     margin: -16px 0 0 -16px;
     position: absolute;
-    background: url(../img/tail-spin.svg) center center no-repeat;
+    background: url(../image/tail-spin.svg) center center no-repeat;
     background-size: 41px;
 }
 
@@ -231,7 +231,7 @@ a.nav-link:hover {
 }
 
 [data-toggle="collapse"] {
-    background-image: url(../img/icons8-menu.svg);
+    background-image: url(../image/icons8-menu.svg);
     width: 35px;
 }
 
@@ -334,4 +334,30 @@ label, .hamburger, .bar {
 #toast-container > div {
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
+}
+
+/* TopScroll Button */
+
+#toTopButton{
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+    display: none;
+    width: 35px;
+    cursor: pointer;
+    }
+    
+#toTopButton > img {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 660px) {
+    #toTopButton {
+        visibility: hidden;
+    }
 }
