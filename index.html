@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mdb.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="navigation-menu fixed-top">
@@ -184,9 +185,9 @@
                     <div class="card-body">
                         <h5 class="card-title">Групові заняття</h5>
                         <p class="card-text" style="color: #fff">Групові заняття 100 грн/год (за умови набору у групу до 4-5 людей)</p>
-                        <a href="#" class="btn btn-primary">Записатись</a>
+                        <a href="#modalRegisterForm" data-toggle="modal" class="btn btn-primary">Записатись</a>
                     </div>
-                </div>
+                </div>  
             </div>
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="card my-2">
@@ -194,7 +195,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Індивідуальні заняття</h5>
                         <p class="card-text" style="color: #fff">Індивідуальні заняття 200грн/год (кожне 10 заняття безкоштовне!)</p>
-                        <a href="#" class="btn btn-primary">Записатись</a>
+                        <a href="#modalRegisterForm" data-toggle="modal" class="btn btn-primary">Записатись</a>
                     </div>
                 </div>
             </div>
@@ -204,7 +205,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Запишись вже зараз</h5>
                         <p class="card-text" style="color: #fff">Перше пробне заняття безкоштовне! (Спробуй сам!)</p>
-                        <a href="#" class="btn btn-primary">Записатись</a>
+                        <a href="#modalRegisterForm" data-toggle="modal" class="btn btn-primary">Записатись</a>
                     </div>
                 </div>
             </div>
@@ -322,7 +323,11 @@
         </div>
     </footer>
 </div>
-<div id="scrollToTop" onclick="goUp();"><h1> UP </h1> </div>
+
+<!--Go up-->
+
+<a id="button"></a>
+
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/mdb.min.js"></script>
