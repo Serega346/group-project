@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: linen;
+    background-color: #d1bdbe;
 }
 
 footer {
@@ -11,9 +11,11 @@ footer {
     line-height: 1.6;
     font-family: 'Script MT Bold', 'Segoe Print', Arial, sans-serif;
 }
-
+#foot {
+    background-color: #77654d;
+}
 .footer-background {
-    background-color: #1C2331;
+    background-color: #1c2331;
 }
 
 footer a {
@@ -82,7 +84,7 @@ img[alt="telegram_logo"]:hover {
 }
 
 #step {
-    background-color: aliceblue;
+    background-color: #77654d;
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 0;
@@ -90,17 +92,18 @@ img[alt="telegram_logo"]:hover {
 }
 
 #step-header {
-    background-color: #1C2331;
-    color: white;
-    font-family: verdana;
+    background-color: #1c2331;
+    color: whitesmoke;
+    font-family: 'Script MT Bold', 'Segoe Print', Arial, sans-serif;
+    letter-spacing: 2px;
 }
 
 label {
     padding-top: 3px;
     color: black;
-    font-family: verdana;
     font-size: 15px;
     padding-bottom: 0px;
+    font-family: 'Script MT Bold', 'Segoe Print', Arial, sans-serif;
 }
 
 #fire {
